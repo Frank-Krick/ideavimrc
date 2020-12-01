@@ -1,0 +1,36 @@
+set number relativenumber
+map <space> <leader>
+
+nnoremap <leader>q :source ~/.ideavimrc<cr>
+nnoremap <leader>a :actionlist<cr>
+nnoremap <leader>o :tabonly<cr>
+nnoremap <leader>d :action ShowErrorDescription<cr>
+nnoremap <leader>s :vsplit<cr>
+
+"x -> execute
+nnoremap <leader>xt :action TestTreePopupMenu<cr>
+
+"t -> typescript
+nnoremap <leader>td :action QuickTypeDefinition<cr>
+
+"n -> navigate
+nnoremap <leader>nw1 1<c-w>w
+nnoremap <leader>nw2 2<c-w>w
+nnoremap <leader>nw3 3<c-w>w
+nnoremap <leader>nw4 4<c-w>w
+nnoremap <leader>ne :action GotoNextError<cr>
+nnoremap <leader>np :action ActivateProjectToolWindow<cr>
+nnoremap <leader>nt :action ActivateTypeScriptToolWindow<cr>
+nnoremap <leader>nr :action ActivateRunToolWindow<cr>
+nnoremap <leader>ni :action ActivateInspectionResultsToolWindow<cr>
+
+"c -> code actions
+nnoremap <leader>ce 0iexport <esc>
+nnoremap <leader>cp :action ReformatWithPrettierAction<cr>
+nnoremap <leader>cr :action RefactoringMenu<cr>
+vnoremap <leader>cr :action RefactoringMenu<cr>
+nnoremap <leader>ci :action InspectCode<cr>
+
+"d -> debug action
+nnoremap <leader>db :action ToggleLineBreakpoint<cr>
+
