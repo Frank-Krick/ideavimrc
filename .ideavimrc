@@ -25,7 +25,10 @@ nnoremap <leader>nr :action ActivateRunToolWindow<cr>
 nnoremap <leader>ni :action ActivateInspectionResultsToolWindow<cr>
 
 "c -> code actions
-nnoremap <leader>ce 0iexport <esc>
+nnoremap <leader>cec 0iexport class 
+nnoremap <leader>cef 0iexport function 
+nnoremap <leader>ceo 0iexport const 
+nnoremap <leader>cel 0iexport let 
 nnoremap <leader>cp :action ReformatWithPrettierAction<cr>
 nnoremap <leader>cr :action RefactoringMenu<cr>
 vnoremap <leader>cr :action RefactoringMenu<cr>
